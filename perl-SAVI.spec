@@ -3,12 +3,12 @@ Summary:	Perl module interface to the Sophos Anti-Virus engine
 Summary(pl):	Modu³ Perla bêd±cy interfejsem do silnika Sophos Anti-Virus
 Name:		perl-SAVI
 Version:	0.15
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.csupomona.edu/~henson/www/projects/SAVI-Perl/dist/SAVI-Perl-%{version}.tar.gz
 BuildRequires:	perl >= 5.005
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_noautoreqdep	libsavi.so.2
@@ -26,7 +26,8 @@ bezpo¶rednio z Perla.
 %setup -q -n SAVI-Perl-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %install
@@ -40,8 +41,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README example/*
-%{perl_sitearch}/*.pm
-%dir %{perl_sitearch}/auto/SAVI
-%{perl_sitearch}/auto/SAVI/*.bs
-%attr(755, root, root) %{perl_sitearch}/auto/SAVI/*.so
+%{perl_vendorarch}/*.pm
+%dir %{perl_vendorarch}/auto/SAVI
+%{perl_vendorarch}/auto/SAVI/*.bs
+%attr(755, root, root) %{perl_vendorarch}/auto/SAVI/*.so
 %{_mandir}/man3/*
