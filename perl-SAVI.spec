@@ -2,7 +2,7 @@
 Summary:	Perl module interface to the Sophos Anti-Virus engine
 Summary(pl):	Modu³ Perla bêd±cy interfejsem do silnika Sophos Anti-Virus
 Name:		perl-SAVI
-Version:	0.10
+Version:	0.15
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
