@@ -1,10 +1,10 @@
 %include	/usr/lib/rpm/macros.perl
-Summary:	Perl module interface to the Sophos Anti-Virus engine
-Summary(pl):	Modu³ Perla bêd±cy interfejsem do silnika Sophos Anti-Virus
+Summary:	SAVI - Perl interface to the Sophos Anti-Virus engine
+Summary(pl):	SAVI - interfejs perlowy do silnika antywirusa Sophos
 Name:		perl-SAVI
 Version:	0.15
 Release:	2
-License:	GPL
+License:	GPL v1+
 Group:		Development/Languages/Perl
 Source0:	http://www.csupomona.edu/~henson/www/projects/SAVI-Perl/dist/SAVI-Perl-%{version}.tar.gz
 # Source0-md5:	b80db8b05cbf92fc81995dce39ac261d
