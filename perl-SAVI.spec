@@ -10,6 +10,7 @@ Source0:	http://www.csupomona.edu/~henson/www/projects/SAVI-Perl/dist/SAVI-Perl-
 # Source0-md5:	b80db8b05cbf92fc81995dce39ac261d
 BuildRequires:	perl-devel >= 5.005
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	A-FUCKING-BRAIN-AND-PROPRIETARY-LIB!
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_noautoreqdep	libsavi.so.2
