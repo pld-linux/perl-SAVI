@@ -10,6 +10,8 @@ BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.005
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
+%define		_noautoreqdep	libsavi.so.2
+
 %description
 SAVI-Perl is a Perl module interface to the Sophos Anti-Virus engine.
 It allows you to scan files for viruses directly from Perl.
