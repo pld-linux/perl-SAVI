@@ -4,7 +4,7 @@
 #
 %include	/usr/lib/rpm/macros.perl
 Summary:	SAVI - Perl interface to the Sophos Anti-Virus engine
-Summary(pl.UTF-8):   SAVI - interfejs perlowy do silnika antywirusa Sophos
+Summary(pl.UTF-8):	SAVI - interfejs perlowy do silnika antywirusa Sophos
 Name:		perl-SAVI
 Version:	0.25
 Release:	1
