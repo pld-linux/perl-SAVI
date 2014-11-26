@@ -1,7 +1,8 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
+
+%define		pdir	SAVI
 %include	/usr/lib/rpm/macros.perl
 Summary:	SAVI - Perl interface to the Sophos Anti-Virus engine
 Summary(pl.UTF-8):	SAVI - interfejs perlowy do silnika antywirusa Sophos
@@ -12,9 +13,10 @@ License:	GPL v1+
 Group:		Development/Languages/Perl
 Source0:	http://www.csupomona.edu/~henson/www/projects/SAVI-Perl/dist/SAVI-Perl-%{version}.tar.gz
 # Source0-md5:	f53c5764e668e5d6c59e4713f8ee83b5
+URL:		http://search.cpan.org/dist/SAVI-/
+BuildRequires:	A-FUCKING-BRAIN-AND-PROPRIETARY-LIB!
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
-BuildRequires:	A-FUCKING-BRAIN-AND-PROPRIETARY-LIB!
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_noautoreqdep	libsavi.so.2
