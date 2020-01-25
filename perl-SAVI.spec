@@ -3,7 +3,6 @@
 %bcond_without	tests	# do not perform "make test"
 
 %define		pdir	SAVI
-%include	/usr/lib/rpm/macros.perl
 Summary:	SAVI - Perl interface to the Sophos Anti-Virus engine
 Summary(pl.UTF-8):	SAVI - interfejs perlowy do silnika antywirusa Sophos
 Name:		perl-SAVI
